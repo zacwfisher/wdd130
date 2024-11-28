@@ -13,24 +13,6 @@
     box-sizing: border-box;
 }
 
-.marcellus-regular {
-    font-family: "Marcellus", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.fanwood-text-regular {
-    font-family: "Fanwood Text", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.fanwood-text-regular-italic {
-    font-family: "Fanwood Text", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
 .sociallinks a {
     text-decoration: none;
 }
@@ -38,10 +20,12 @@
 h1 {
     color: var(--primary-color);
     position: absolute;
+    font-family: 'Marcellus', serif
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
+    font-family: 'Fanwood Text', serif;
 }
 
 p { 
