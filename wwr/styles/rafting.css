@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #034732;
+    --secondary-color: #343C54;
+    --accent1-color: #CE7510;
+    --accent2-color: #5D6C60;
+    --height: auto;
+    --text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    position: absolute;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+p { 
+    padding: 0;
+    color: var(--accent2-color);
+}
+
+a [href]{
+    text-decoration: none;
+    color: #1727b3;
+}
+
+div {
+    width: 1000px;
+    position: relative;
+}
+
+.herodiv {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero img {
+    position: relative;
+    left: 25px; /*remove this and another line, this is just a test, didn't work*/
+    top: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    position: absolute;
+}
+
+article img {
+    float: right;
+}

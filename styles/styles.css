@@ -4,6 +4,12 @@
     --text-align: center;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: var(--background-color);
     padding: 10px;
@@ -20,11 +26,16 @@ h1 {
 }
 
 img {
-    width: 150px;
-    height: var(--height);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+main img {
+    float: right;
 }
 
 p { padding: 0;}
@@ -34,19 +45,23 @@ main {
 }
 
 aside{
-    width: 20rem;
+    width: 20em;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
     padding: 1rem;
     /* I want this to stay a different color than the main blue color I have so I am not changing it the the var() in :root */
     background-color: #eee;
-    color: #333;
-    text-align: var(--text-align);
+    color: #000;
+    text-align: center;
 }
 
 aside img {
     width: 200px;
-    height: var(--height);
+    height: auto;
+}
+
+li {
+    margin-bottom: auto;
 }
 
 main img {
@@ -58,4 +73,17 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: var(--text-align);
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
