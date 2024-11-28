@@ -13,6 +13,24 @@
     box-sizing: border-box;
 }
 
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.fanwood-text-regular {
+    font-family: "Fanwood Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.fanwood-text-regular-italic {
+    font-family: "Fanwood Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .sociallinks a {
     text-decoration: none;
 }
