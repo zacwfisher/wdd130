@@ -13,8 +13,10 @@
     box-sizing: border-box;
 }
 
-.sociallinks a {
-    text-decoration: none;
+.hero-title h1 {
+    color: var(--primary-color);
+    position: absolute;
+    font-family: 'Marcellus', serif
 }
 
 h1 {
@@ -28,6 +30,10 @@ h2, h3, h4, h5, h6 {
     font-family: 'Fanwood Text', serif;
 }
 
+.sociallinks a {
+    text-decoration: none;
+}
+
 p { 
     padding: 0;
     color: var(--accent2-color);
@@ -38,18 +44,7 @@ a [href]{
     color: #1727b3;
 }
 
-div {
-    width: 1000px;
-    position: relative;
-}
-
-.herodiv {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.hero img {
+.hero-image img {
     position: relative;
     left: 25px; /*remove this and another line, this is just a test, didn't work*/
     top: 15px;
@@ -58,7 +53,15 @@ div {
     height: auto;
 }
 
-article {
+.hero-container div {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero-article article {
     position: absolute;
 }
 
