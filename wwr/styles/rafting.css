@@ -3,68 +3,119 @@
     --secondary-color: #343C54;
     --accent1-color: #CE7510;
     --accent2-color: #5D6C60;
-    --height: auto;
-    --text-align: center;
 }
 
-* {
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 30px;
+}
+
+header img {
+    display: flex;
+    align-self: flex-end;
+    padding: 0.5rem;
+    max-height: 100px;
+    grid-column: 2;
+}
+
+nav {/*How can I change the background color of the social media links?*/
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    grid-column: 3;
 }
 
-.hero-title h1 {
-    color: var(--primary-color);
+nav a {/*what is the 'a' referring to? I thought this was the social media links but it is configuring the main nav...*/
+    font-size: 20px;
+    color:var(--secondary-color);
+    text-decoration: none;
+    padding: 3px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    background-color: var(--accent1-color);
+}
+
+main {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.hero {
+    font-family: 'Fanwood';/*is my font being selected correctly?*/
+    position: relative; /*what makes this relative? How does it know what to be relative to?*/
+    margin: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
     position: absolute;
-    font-family: 'Marcellus', serif
-}
-
-h1 {
+    top: 10px;
+    left: 0%;
+    right: 0%;
     color: var(--primary-color);
-    position: absolute;
-    font-family: 'Marcellus', serif
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
-    color: var(--secondary-color);
-    font-family: 'Fanwood Text', serif;
+.hero article {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 35%;
+    bottom: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    height: auto;
+}
+
+.hero h2 {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.hero article img {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin-left: 10px;
+    float: right;
+}
+
+.hero article p {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    padding-left: 5px;
 }
 
 .sociallinks a {
     text-decoration: none;
 }
 
-p { 
-    padding: 0;
-    color: var(--accent2-color);
-}
-
+/* is this necessary? */
 a [href]{
     text-decoration: none;
     color: #1727b3;
-}
-
-.hero-image img {
-    position: relative;
-    left: 25px; /*remove this and another line, this is just a test, didn't work*/
-    top: 15px;
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero-container div {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-}
-
-.hero-article article {
-    position: absolute;
-}
-
-article img {
-    float: right;
 }
