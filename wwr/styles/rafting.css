@@ -43,6 +43,16 @@ nav a {/*what is the 'a' referring to? I thought this was the social media links
     background-color: var(--accent1-color);
 }
 
+.wireframelink nav {
+    font-size: 20px;
+    color:var(--secondary-color);
+    text-decoration: none;
+    padding: 3px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    background-color: var(--accent1-color);
+}
+
 main {
     padding: 2rem;
     margin: 2rem;
@@ -119,3 +129,8 @@ a [href]{
     text-decoration: none;
     color: #1727b3;
 }
+
+.slideshow section {
+    display: inline-block;
+    flex-direction: row;
+}    
