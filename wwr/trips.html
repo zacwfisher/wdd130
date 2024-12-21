@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Zac Fisher">
-        <title>Contact Rapids Whitewater Rafting</title>
-        <meta name="description" content="This is the Contact Us page for the Rapids Whitewater Rafting website">
+        <title>Trips | Rapids Whitewater Rafting</title>
+        <meta name="description" content="This is the Trips page for the Rapids Whitewater Rafting website">
         <link rel="stylesheet" href="styles/rafting.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,28 +24,68 @@
         </header>
         <main>
             <img src="images/happyface1.jpg" alt="Happy Employee">
-            <h1>Company Information</h1>
-            <!-- Format here for all the contact info -->
-            <div class="contact"> <!-- Specify this class in CSS-->
-                <h2>Address</h2>
-                <p>5000 White Water Rd, Fakename, KY 40012</p> <!-- wrap this in CSS-->
-                <h2>Phone Number</h2>
-                <p>+1 (502) 333-3333</p>
-                <h2>Email</h2>
-                <p>contactus@rapidswhitewater.com</p>
-            </div>
+            <!-- Call to Action -->
+            <section class="call-to-action">
+                <h2>Ready for an Adventure?</h2>
+                <p>Contact us to book your next whitewater rafting experience!</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </section>
+            <!-- Trip Descriptions -->
+            <section class="sectiongrid">
+                <h2>What Will Your Trip Look Like?</h2>
+                <article class="trip-card">
+                    <img src="images/rafting1.jpg" alt="Scenic River Adventure">
+                    <h3>Scenic River Adventure</h3>
+                    <p>Enjoy a relaxing trip through beautiful landscapes, perfect for beginners.</p>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting2.jpg" alt="Thrill Seeker's Dream">
+                    <h3>Thrill Seeker's Dream</h3>
+                    <p>An adrenaline-filled whitewater rafting experience for adventure lovers!</p>
+                </article>
+                <article class="trip-card">
+                    <img src="images/rafting3.jpg" alt="Family Fun Expedition">
+                    <h3>Family Fun Expedition</h3>
+                    <p>A safe and enjoyable experience for families with kids of all ages.</p>
+                </article>
+            </section>
+            <!-- Trips Table -->
+            <section class="trips-table">
+                <h2>Available Trips</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scenic River Adventure</td>
+                            <td>Easy</td>
+                            <td>3 Hours</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Thrill Seeker's Dream</td>
+                            <td>Advanced</td>
+                            <td>5 Hours</td>
+                            <td>$120</td>
+                        </tr>
+                        <tr>
+                            <td>Family Fun Expedition</td>
+                            <td>Intermediate</td>
+                            <td>4 Hours</td>
+                            <td>$80</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12616.079945755004!2d-83.67257786958955!3d37.76612955094942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sred%20river%20gorge%20white%20water%20rafting!5e0!3m2!1sen!2sus!4v1734142597397!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div> 
-            <section>
-                <h2>Meet our Staff!</h2>
-                <img src="images/cheering.jpg" alt="Cheering Rafters" width="400">
-                <!-- <figcaption>Satisfied customers!</figcaption> -->
-                <img src="images/happyface2.jpg" alt="Happy Family Rafting" width="356">
-                <!-- <figcaption>Jan, Head of Family Adventures</figcaption> -->
-                <img src="images/happyface3.jpg" alt="Happy Rafter Thumbs Up" width="400">
-                <!-- <figcaption>Johnathan, Team Lead</figcaption> -->
-            </section>
             <form>
                 <fieldset>
                     <legend>Contact Rapids Whitewater Rafting</legend>
@@ -56,27 +96,6 @@
                     <div class="form-item column2">
                         <label for="useremail">Email:</label>
                         <input type="email" id="useremail" name="useremail">
-                    </div>
-                    <div>
-                        <p>What would you like to contact us about?</p>
-                        <label>
-                            <input type="radio" name="General Inquiry"> General Inquiry
-                        </label>
-                        <label>
-                             <input type="radio" name="Reservation Question"> Reservation Question
-                        </label>
-                        <label>
-                            <input type="radio" name="Website Suggestion"> Website Suggestion
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="Subscribe"> Please subscribe me to the monthly newsletter
-                        </label>
-                    </div>
-                    <div>
-                        <label for="feedback">Message</label>
-                        <textarea id="feedback" name="feedback" rows="4" placeholder="Write your message here."></textarea>
                     </div>
                 </fieldset>
                 <button type="submit">Submit</button>
